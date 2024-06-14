@@ -1,0 +1,59 @@
+#about, #ed,#interest {
+    color:white;
+    text-align: centre;
+}
+
+body {
+    background-color: blueviolet;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px
+}
+
+#intern, #project {
+    color:beige;
+    text-align: centre;
+}
+
+#contact {
+    border: 2px solid black;
+    outline-color: blanchedalmond;
+    font-size: medium;
+    padding-left: 20px;
+    text-align: left;
+
+}
+
+.grid-container {
+    display: flex;
+    grid-template-columns: 200px;
+    grid-template-rows: 100px 100px 100px 100px 100px;
+    width: 800px;
+
+    grid-template-areas: 
+    'contact';
+    
+    gap: 5px;
+    padding: 2px;
+    margin: 10px;
+    row-gap: 10px;
+    column-gap: 10px;
+
+}
+
+.contact {
+    background-color: rgb(28, 128, 48);
+    height: 100px;
+    width: 200px;
+    border: 1px;
+    grid-area: contact1;
+}
+
+
+@media screen and (max-width: 500px) {
+    contact {
+        background-color: lightgreen;
+    }
+}
